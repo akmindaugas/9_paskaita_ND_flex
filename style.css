@@ -1,0 +1,74 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+body{
+    background: #3cb373;
+    color: black;  
+    font-family: Arial;
+    }
+
+    .flex-container{
+    display: flex;
+    flex-direction: row;
+    max-width: 1000px;
+    height: auto;
+    padding-left: 100px;
+    background: #3cb373;
+    transition: 0.3s;
+    }
+
+    .container1{
+    max-width: 70%;
+    height: max-content;
+    margin: 0px;
+     }
+    
+    .container2{
+    max-width: 30%; 
+    height: max-content;
+    min-height: 300px;
+    margin: 0px;
+    }
+
+    div{
+    background: white;
+    border: 10px solid #3cb373;
+    margin: 0px;
+    padding: 0px; 
+    }
+    
+img{
+    width: 100%;
+    height: auto;
+}
+p{
+  letter-spacing: 1px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+h5{
+    text-align: justify;
+    word-spacing: 10px;
+}
+h1, h5{
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 786px) 
+{
+    .flex-container{
+    flex-direction: column;
+    }
+.container2{
+    width: max-content; 
+}
+}
+/* stulpeli nukelia nepilno plocio ir nereaguoja i komanda width 100proc, net su !impotant, kodel? */
+/* kodel atsiranda 8-tuscias div'as antro stulpelio apacioje?? */
+    
